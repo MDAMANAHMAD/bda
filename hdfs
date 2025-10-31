@@ -1,0 +1,12 @@
+hdfs dfs -help 
+hdfs dfs -ls / 
+hdfs dfs -mkdir Input 
+hdfs dfs -ls Input 
+hdfs dfs -ls -R / 
+hdfs dfs -put /home/cloudera/Desktop/StudentInfo.txt Input/StuentInfo.txt 
+hdfs dfs -get Input/StudentInfo.txt home/cloudera/Desktop/StudentInfo1.txt 
+hdfs dfs -cat Input/StudentInfo.txt
+hdfs dfs -cat Input/StudentInfo.txt head 
+hdfs dfs -tail Input/StudentInfo.txt 
+hdfs dfs -rm Input/StudentInfo.txt 
+hdfs dfs -rm /Input
