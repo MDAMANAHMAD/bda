@@ -1,0 +1,26 @@
+//start mongo shell
+mongosh
+
+// agar mongosh se nahi Start hua Mongo shell toh
+mongo
+
+// Create or switch to database
+use studentDB
+
+// Create a collection
+db.createCollection("students")
+
+// Insert data
+db.students.insert({ name: "Aman", age: 21, course: "Data Science" })
+
+// Display all records
+db.students.find()
+
+// Find with condition
+db.students.find({ age: { $gt: 20 } })
+
+// Update a record
+db.students.update({ name: "Aman" }, { $set: { age: 22 } })
+
+// Delete a record
+db.students.remove({ name: "Aman" })
