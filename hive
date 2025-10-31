@@ -1,0 +1,17 @@
+$ hive
+
+hive> create database retail;
+
+hive> show databases
+
+hive> use retail;
+
+hive> create table txnrecords(txno INT, txndate STRING, custno INT, amount DOUBLE, category STRING, product STRING, state STRING)row format delimited fields terminated by ',' stored as textfile;
+
+hive> describe txnrecords;
+
+hive> create table student(id INT, name STRING) delimited fields terminated by ',';
+
+hive> load data local inpath '/home/cloudera/Desktop/BE_A.csv' overwrite into table retail.student
+
+hive> select * from student;
