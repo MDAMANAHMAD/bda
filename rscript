@@ -1,0 +1,23 @@
+print("Hello from R!")
+
+x <- c(10, 20, 30, 40)
+print("Original vector:")
+print(x)
+
+sum_x <- sum(x)
+diff_x <- x[4] - x[1]
+prod_x <- prod(x)
+mean_x <- mean(x)
+
+print(paste("Sum:", sum_x))
+print(paste("Difference (last - first):", diff_x))
+print(paste("Product:", prod_x))
+print(paste("Mean:", mean_x))
+
+asc_x <- sort(x)
+print("Ascending order:")
+print(asc_x)
+
+desc_x <- sort(x, decreasing = TRUE)
+print("Descending order:")
+print(desc_x)
