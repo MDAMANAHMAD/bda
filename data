@@ -1,0 +1,10 @@
+library(ggplot2)
+
+data <- data.frame(
+  Student = c("Aman", "Rahul", "Priya", "Sneha"),
+  Marks = c(85, 90, 75, 95)
+)
+
+ggplot(data, aes(x=Student, y=Marks, fill=Student)) +
+  geom_bar(stat="identity") +
+  labs(title="Student Marks", x="Student", y="Marks")
